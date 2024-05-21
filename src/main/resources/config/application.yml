@@ -15,6 +15,17 @@ app-info:
     version: '@project.version@'
     timestamp: '@app.build.timestamp@'
 
+spring.cloud.vault:
+  uri: http://192.168.56.20:8200 # vault 서버 주소
+  token: hvs.CAESIIDNVNLB9sjwVQH_xv7KlkpI1036DSRFhlZYi5yJ9yncGh4KHGh2cy5TSVRqaVB4WmpZSVZpZWRpbjBBVjJvam8 # root_token
+  connection-timeout: 5000
+  read-timeout: 15000
+  kv:
+    backend: board-secret
+    default-context: simple-api
+    application-name: simple-api
+
+spring.config.import: vault://
  
 logging:
   level:  
