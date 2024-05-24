@@ -17,7 +17,7 @@ app-info:
 
 spring.cloud.vault:
   uri: http://192.168.56.20:8200 # vault 서버 주소
-  token: hvs.CAESIIDNVNLB9sjwVQH_xv7KlkpI1036DSRFhlZYi5yJ9yncGh4KHGh2cy5TSVRqaVB4WmpZSVZpZWRpbjBBVjJvam8 # root_token
+  token: hvs.CAESIIDNVNLB9sjwVQH_xv7KlkpI1036DSRFhlZYi5yJ9yncGh4KHGh2cy5TSVRqaVB4WmpZSVZpZWRpbjBBVjJvam8 # vault token
   connection-timeout: 5000
   read-timeout: 15000
   kv:
